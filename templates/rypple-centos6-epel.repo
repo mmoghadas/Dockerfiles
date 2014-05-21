@@ -1,5 +1,0 @@
-[rypple-centos6-epel]
-name=rypple-centos6-epel
-enabled=1
-gpgcheck=0
-baseurl=http://distros.ops.ripul.com/epel/6/x86_64/
