@@ -12,3 +12,5 @@ RUN mkdir /app
 RUN mkdir /data
 RUN mkdir /config
 
+# Install Packages
+RUN yum install -y git
