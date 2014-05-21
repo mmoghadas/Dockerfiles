@@ -12,6 +12,10 @@ RUN mkdir /app
 RUN mkdir /data
 RUN mkdir /config
 
-# Install Packages
+# Install RPM Packages
 RUN yum install -y git
 RUN yum install -y augeas
+RUN yum install -y ruby
+
+# Install Gem Packages
+RUN gem install --config-file=/root/.gemrc rack -v 1.4.5
