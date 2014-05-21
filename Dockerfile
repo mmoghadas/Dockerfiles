@@ -12,5 +12,8 @@ RUN mkdir /app
 RUN mkdir /data
 RUN mkdir /config
 
+# Add yum repositories
+ADD templates/rypple-centos6-epel.repo /etc/yum.repos.d/rypple-centos6-epel.repo
+
 # Install Packages
 RUN yum install -y git
